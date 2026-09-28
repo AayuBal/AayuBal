@@ -34,9 +34,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
-          git -C dist init --initial-branch=output
-          git -C dist config user.name "github-actions[bot]"
-          git -C dist config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C dist add .
-          git -C dist commit -m "chore: update contribution snake"
-          git -C dist -c "http.extraheader=AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 | tr -d '\n')" push --force "https://github.com/${GITHUB_REPOSITORY}.git" output
+          mkdir -p publish
+          cp dist/*.gif publish/
+          git -C publish init --initial-branch=output
+          git -C publish config user.name "github-actions[bot]"
+          git -C publish config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C publish add .
+          git -C publish commit -m "chore: update contribution snake"
+          git -C publish -c "http.extraheader=AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 | tr -d '\n')" push --force "https://github.com/${GITHUB_REPOSITORY}.git" output
