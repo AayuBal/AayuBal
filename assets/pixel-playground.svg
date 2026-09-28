@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
+  <title id="title">像素海岛与造物工坊</title>
+  <desc id="desc">阳光、像素海浪、一只木筏和一台小电脑，组成正在探索与创造的海岛。</desc>
+  <g fill="#f7bf59">
+    <rect x="112" y="38" width="12" height="12"/><rect x="136" y="38" width="12" height="12"/><rect x="124" y="26" width="12" height="12"/>
+    <rect x="1020" y="40" width="12" height="12"/><rect x="1044" y="40" width="12" height="12"/><rect x="1032" y="28" width="12" height="12"/>
+    <rect x="1090" y="102" width="8" height="8"/><rect x="226" y="96" width="8" height="8"/><rect x="890" y="30" width="8" height="8"/>
+    <rect x="790" y="45" width="6" height="6"/><rect x="300" y="48" width="6" height="6"/><rect x="980" y="114" width="6" height="6"/>
+  </g>
+  <g fill="#77cbbb">
+    <rect x="176" y="66" width="24" height="12"/><rect x="188" y="54" width="36" height="12"/><rect x="224" y="66" width="24" height="12"/><rect x="200" y="78" width="36" height="8"/>
+    <rect x="894" y="84" width="30" height="8"/><rect x="912" y="76" width="34" height="8"/><rect x="942" y="84" width="20" height="8"/>
+  </g>
+  <g fill="#48a99f" opacity=".85">
+    <rect x="34" y="174" width="82" height="8"/><rect x="76" y="194" width="112" height="8"/><rect x="210" y="170" width="58" height="8"/>
+    <rect x="290" y="196" width="94" height="8"/><rect x="420" y="174" width="70" height="8"/><rect x="710" y="194" width="76" height="8"/>
+    <rect x="822" y="172" width="126" height="8"/><rect x="986" y="196" width="80" height="8"/><rect x="1090" y="174" width="72" height="8"/>
+    <rect x="148" y="222" width="110" height="8"/><rect x="346" y="226" width="84" height="8"/><rect x="800" y="226" width="104" height="8"/><rect x="1030" y="224" width="92" height="8"/>
+  </g>
+  <g fill="#267f81" opacity=".75">
+    <rect x="0" y="244" width="1200" height="8"/><rect x="20" y="212" width="76" height="8"/><rect x="458" y="212" width="88" height="8"/><rect x="630" y="220" width="92" height="8"/><rect x="944" y="210" width="96" height="8"/>
+  </g>
+  <g>
+    <rect x="486" y="158" width="228" height="20" fill="#235d61"/>
+    <rect x="500" y="142" width="200" height="16" fill="#c97e52"/>
+    <rect x="510" y="130" width="180" height="12" fill="#f0b763"/>
+    <rect x="526" y="132" width="8" height="24" fill="#87513f"/><rect x="562" y="132" width="8" height="24" fill="#87513f"/>
+    <rect x="598" y="132" width="8" height="24" fill="#87513f"/><rect x="634" y="132" width="8" height="24" fill="#87513f"/><rect x="670" y="132" width="8" height="24" fill="#87513f"/>
+    <rect x="574" y="102" width="28" height="28" fill="#f1d49c"/><rect x="580" y="108" width="16" height="16" fill="#315b65"/>
+    <rect x="568" y="130" width="40" height="12" fill="#e97758"/><rect x="574" y="142" width="28" height="12" fill="#276b71"/>
+    <rect x="556" y="154" width="12" height="8" fill="#f7bf59"/><rect x="608" y="154" width="12" height="8" fill="#f7bf59"/>
+  </g>
+  <g>
+    <rect x="804" y="94" width="112" height="70" fill="#244851"/>
+    <rect x="814" y="104" width="92" height="46" fill="#9be0d0"/>
+    <rect x="826" y="116" width="12" height="8" fill="#276b71"/><rect x="844" y="116" width="28" height="8" fill="#e97758"/>
+    <rect x="832" y="130" width="30" height="8" fill="#f7bf59"/><rect x="868" y="130" width="18" height="8" fill="#276b71"/>
+    <rect x="840" y="164" width="40" height="8" fill="#244851"/><rect x="820" y="172" width="80" height="8" fill="#77cbbb"/>
+  </g>
+  <g fill="#e97758">
+    <rect x="292" y="112" width="12" height="12"/><rect x="304" y="100" width="12" height="12"/><rect x="316" y="112" width="12" height="12"/>
+    <rect x="744" y="58" width="8" height="8"/><rect x="756" y="46" width="8" height="8"/><rect x="768" y="58" width="8" height="8"/>
+    <rect x="1070" y="150" width="10" height="10"/><rect x="1080" y="140" width="10" height="10"/><rect x="1090" y="150" width="10" height="10"/>
+  </g>
+</svg>
