@@ -1,0 +1,44 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "13 2 * * 1"
+  workflow_dispatch:
+  push:
+    paths:
+      - "README.md"
+      - "assets/**"
+      - ".github/workflows/snake.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate light and dark GIFs
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake-light.gif?color_snake=%23ffb454&color_dots=%23f5eedf,%23c6e7dc,%238dc9b7,%2356a99e,%23327179&color_background=%23fffaf0
+            dist/github-contribution-grid-snake-dark.gif?color_snake=%23ffb454&color_dots=%2318232f,%23253c48,%23325e68,%2349817f,%2371ad8f&color_background=%230f1722
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish GIFs to output branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          mkdir -p publish
+          cp dist/*.gif publish/
+          git -C publish init --initial-branch=output
+          git -C publish config user.name "github-actions[bot]"
+          git -C publish config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C publish add .
+          git -C publish commit -m "chore: update contribution snake"
+          git -C publish -c "http.extraheader=AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 | tr -d '\n')" push --force "https://github.com/${GITHUB_REPOSITORY}.git" output
